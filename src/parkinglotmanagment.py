@@ -14,3 +14,10 @@ class ParkingLot:
     def removeVehicle(self, vehicle):
         if vehicle == Car():
             vehicle = None
+
+    def isFull(self):
+        return len(self.parkingLot) == self.capacity
+
+
+class ParkingLotOwner(ParkingLot):
+    pass

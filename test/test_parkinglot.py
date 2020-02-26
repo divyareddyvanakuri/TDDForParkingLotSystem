@@ -1,7 +1,7 @@
 import unittest
 import sys
 sys.path.append("/home/user/Desktop/parkinglotmanagment/src")
-from parkinglotmanagment import ParkingLot,Car
+from parkinglotmanagment import ParkingLot,Car,ParkingLotOwner
 
 
 class ParkingLotManagment(unittest.TestCase):
@@ -17,6 +17,14 @@ class ParkingLotManagment(unittest.TestCase):
         parkingLot_object.placeVehicle(car_object)
         result = parkingLot_object.removeVehicle(car_object)
         self.assertEqual(result,None)
+
+    def test_lotIsFull_ownerWantToKnow_shouldBeReturnFull(self):
+        car_object = Car()
+        owner_object = ParkingLotOwner()
+        owner_object.placeVehicle(car_object)
+        owner_object.placeVehicle(car_object)
+        result = owner_object.isFull()
+        self.assertEqual(result,True)
 
     
 
