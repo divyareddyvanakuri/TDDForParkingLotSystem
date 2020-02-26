@@ -11,6 +11,12 @@ class ParkingLotManagment(unittest.TestCase):
         result = parkingLot_object.placeVehicle(car_object)
         self.assertEqual(result,car_object)
 
+    def test_givenCar_whenUnparkedFromParkingLot_shouldBeReturnUnparked(self):
+        car_object = Car()
+        parkingLot_object = ParkingLot()
+        parkingLot_object.placeVehicle(car_object)
+        result = parkingLot_object.removeVehicle(car_object)
+        self.assertEqual(result,None)
 
     
 

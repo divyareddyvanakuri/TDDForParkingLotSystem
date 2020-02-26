@@ -10,3 +10,7 @@ class ParkingLot:
     def placeVehicle(self, vehicle):
         self.parkingLot.append(vehicle)
         return vehicle
+
+    def removeVehicle(self, vehicle):
+        if vehicle == Car():
+            vehicle = None
