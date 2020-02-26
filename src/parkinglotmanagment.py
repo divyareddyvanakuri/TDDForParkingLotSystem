@@ -21,3 +21,7 @@ class ParkingLot:
 
 class ParkingLotOwner(ParkingLot):
     pass
+
+
+class ParkingLotSecurity(ParkingLot):
+    pass
