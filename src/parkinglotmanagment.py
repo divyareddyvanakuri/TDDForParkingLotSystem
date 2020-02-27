@@ -16,10 +16,8 @@ class ParkingLot:
         for index in range(len(self.parkingLot)):
             if self.parkingLot[index] == None:
                 self.parkingLot[index] = vehicle
-                return True
-        for notifier in self.listOf_notifiers:
-            notifier.lotFullNotification()
-        return False
+                return True    
+        return False is [notifier.lotFullNotification() for notifier in self.listOf_notifiers]
 
     def removeVehicle(self, vehicle):
         for index in range(len(self.parkingLot)):

@@ -36,6 +36,7 @@ class ParkingLotManagment(unittest.TestCase):
         parkingLot_object.placeVehicle(Car())
         result = parkingLot_object.removeVehicle(Car())
         self.assertEqual(ParkingLotOwner().lotFreeNotification(),result)
+    
         
 if __name__ == "__main__":
     unittest.main()
