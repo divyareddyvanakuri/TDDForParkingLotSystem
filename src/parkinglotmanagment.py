@@ -1,7 +1,6 @@
 class Car:
     pass
 
-
 class ParkingLot:
     def __init__(self):
         self.parkingLot = []
@@ -13,3 +12,5 @@ class ParkingLot:
     def removeVehicle(self, vehicle):
         if vehicle == Car():
             vehicle = None
+
+        

@@ -18,5 +18,8 @@ class ParkingLotManagment(unittest.TestCase):
         result = parkingLot_object.removeVehicle(car_object)
         self.assertEqual(result,None)
 
+
+
 if __name__ == "__main__":
     unittest.main()
+
